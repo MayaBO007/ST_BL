@@ -1,4 +1,4 @@
-let criterion = [];
+// let criterion = [];
 
 async function onloadPics() {
     return new Promise(resolve => {
