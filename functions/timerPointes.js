@@ -188,7 +188,7 @@ function showWinnings() {
     }
 };
 
-let breaks = [];
+// let breaks = [];
 
 function timeToFive() {
     let updatedDates = updateDates();
@@ -276,4 +276,4 @@ const devButton = [];
 
 
 
-let countingCars = null;
+// let countingCars = null;
