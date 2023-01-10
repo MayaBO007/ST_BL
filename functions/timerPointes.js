@@ -9,7 +9,7 @@ async function onloadPics() {
     })
 };
 
-let now = null;
+// let now = null;
 function msCount() {
     msIntAll = setInterval(function setTimer() {
         now = now + 10;
