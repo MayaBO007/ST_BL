@@ -1,5 +1,5 @@
 function timeline() {
-    let startDayFour = async function () {
+    let startDayTwo = async function () {
         platform.getAllSessions().then((data) => {
             getIndexSessionData(data).then((i) => {
                 studySessionData = data[i];
@@ -17,7 +17,7 @@ function timeline() {
                             moveToDay();
                         }, timeToFiveSameDay());
                     } else {
-                        let goFour = async function () {
+                        let goTwo = async function () {
                             deleteFromSessionData();
                             document.getElementById("startButton").style.display = "inline";
                             document.getElementById("redButton").style.display = "inline";
@@ -25,7 +25,7 @@ function timeline() {
                             document.getElementById("gameScreen").style.display = "inline";
                             document.getElementById("startButton").onclick = function () {
                                 document.getElementById("startButton").style.display = "none";
-                                studySessionData.doneDay4 = "stratDayFour";
+                                studySessionData.doneDay2 = "stratDayTwo";
                                 platform.saveSession(studySessionData);
                                 msCount();
                                 let startIntervalTest = async function () {
@@ -41,9 +41,9 @@ function timeline() {
                                             document.getElementById(button).style.display = "none";
                                             document.getElementById("iframe-element").style.display = "none";
                                             let startDevaluation = async function () {
-                                                let doneDayFour = await startDevTest(); // add promise and resolve
-                                                if (doneDayFour == "doneDayFour") {
-                                                    studySessionData.doneDay4 = "doneDayFour";
+                                                let doneDayTwo = await startDevTest(); // add promise and resolve
+                                                if (doneDayTwo == "doneDayTwo") {
+                                                    studySessionData.doneDay2 = "doneDayTwo";
                                                     studySessionData.expDaysDate = updatedDates.fullDate;
                                                     platform.saveSession(studySessionData, true)
                                                     // check what's going on here
@@ -67,7 +67,7 @@ function timeline() {
                                 startIntervalTest();
                             }
                         }
-                        goFour()
+                        goTwo()
                     }
                 } else {
                     document.getElementById("endOfGame").style.display = "inline";
@@ -75,5 +75,5 @@ function timeline() {
             });
         });
     }
-    startDayFour();
+    startDayTwo();
 }

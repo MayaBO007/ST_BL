@@ -125,8 +125,6 @@ let studySessionData = {
     doneInstructions: "",
     doneDay1: "",
     doneDay2: "",
-    doneDay3: "",
-    doneDay4: "",
     expDaysDate: ""
 };
 
@@ -172,7 +170,7 @@ function showWinnings() {
     } else {
         blueWinsLength = blueWinsLength + correctBluePressDevtest.length;
     }
-    if (studySessionData.doneDay4 == "doneDayTwo") {
+    if (studySessionData.doneDay2 == "doneDayTwo") {
         document.getElementById("blueButton").style.display = "none";
         document.getElementById("redButton").style.display = "none";
         document.getElementById("endOfDayMessage").style.display = "inline";

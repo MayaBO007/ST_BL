@@ -9,7 +9,7 @@ async function start2tests() {
         document.getElementById("gameScreen").style.display = "inline";
         document.getElementById("startButton").onclick = function () {
             document.getElementById("startButton").style.display = "none";
-            studySessionData.doneDay3 = "startDayThree";
+            studySessionData.doneDay1 = "startDayThree";
             platform.saveSession(studySessionData);
             msCount();
             let startIntervalTest = async function () {
