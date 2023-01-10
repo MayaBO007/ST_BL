@@ -2,7 +2,7 @@
 
 // move to main function
 function timeline() {
-    let startDayThree = async function () {
+    let startDayOne = async function () {
         platform.getAllSessions().then((data) => {
             getIndexSessionData(data).then((i) => {
                 studySessionData = data[i];
@@ -20,23 +20,23 @@ function timeline() {
                             moveToDay();
                         }, timeToFiveSameDay());
                     } else {
-                        let goThree = async function () {
+                        let goOne = async function () {
                             deleteFromSessionData();
-                            let doneDayThree = await start2tests(); // add promise and resolve
-                            if (doneDayThree == "doneDayThree") {
-                                studySessionData.doneDay3 = "doneDayThree";
+                            let doneDayOne = await start2tests(); // add promise and resolve
+                            if (doneDayOne == "doneDayOne") {
+                                studySessionData.doneDay1 = "doneDayOne";
                                 studySessionData.expDaysDate = updatedDates.fullDate;
                                 platform.saveSession(studySessionData, true)
                                 document.getElementById("endDayMsg").style.display = "inline";
                                 document.getElementById("endDayMsg").addEventListener("click", function () {
                                     showWinnings()
                                     setTimeout(() => {
-                                        platform.goToUrl("days/dayFour/dayFour.html");
+                                        platform.goToUrl("days/dayTwo/dayTwo.html");
                                     }, 7000)
                                 })
                             }
                         }
-                        goThree()
+                        goOne()
                     }
                 } else {
                     document.getElementById("endOfGame").style.display = "inline";
@@ -44,7 +44,7 @@ function timeline() {
             })
         });
     }
-    startDayThree()
+    startDayOne()
 }
 
 
