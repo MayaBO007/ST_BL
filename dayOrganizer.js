@@ -6,11 +6,8 @@ function moveToDay() {
             document.getElementById("moveToAppButton").style.display = "none";
             document.getElementById("front").style.display = "inline";
             document.getElementById("loading").style.display = "inline";
-            // let div = document.getElementById("loading");
-            // div.style.removeProperty("display");
             if ((typeof studySessionData == "undefined") || (studySessionData.doneInstructions == "")) {
                 platform.goToUrl("instructions/instructions.html");
-                studySessionData.doneInstructions = "stratIns";
             } else if (studySessionData.doneDay1 != "doneDayOne") {
                 if (studySessionData.doneDay1 == "") {
                     platform.goToUrl("days/dayOne/dayOne.html");
