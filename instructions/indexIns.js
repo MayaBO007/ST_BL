@@ -1,13 +1,12 @@
 
 // move to main function
 function timeline() {
-    platform.getAllSessions().then((data) => {
-        if ((typeof data == "undefined") || (studySessionData.doneInstructions == "")) {
-            let updatedDates = updateDates();
-            studySessionData.startDate = startDate;
-            // let goIns = async function () {
-            // let doneInstructions = await startFirstDay();
-            // if (doneInstructions == "doneInstructions") {
+    let updatedDates = updateDates();
+    studySessionData.startDate = startDate;
+    studySessionData.doneInstructions = "stratIns";
+    let goIns = async function () {
+        let doneInstructions = await startFirstDay();
+        if (doneInstructions == "doneInstructions") {
             studySessionData.doneInstructions = "doneInstructions";
             studySessionData.expDaysDate = updatedDates.fullDate;
             platform.saveSession(studySessionData, true);
@@ -17,14 +16,13 @@ function timeline() {
                     platform.goToUrl("days/dayOne/dayOne.html");
                 }, 200)
             });
-            //goIns();
+            goIns();
 
 
         } else {
             moveToDay()
         }
-    })
-
+    }
 }
 
 
