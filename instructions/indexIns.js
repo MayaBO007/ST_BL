@@ -16,13 +16,11 @@ function timeline() {
                     platform.goToUrl("days/dayOne/dayOne.html");
                 }, 200)
             });
-            goIns();
-
-
         } else {
             moveToDay()
         }
     }
+    goIns();
 }
 
 
