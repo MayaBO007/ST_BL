@@ -30,8 +30,3 @@ function timeline() {
     })
 }
 
-
-// let getlastData = await getData();
-// if (getlastData == "gotData") {
-//     studySessionData = savedData[0][savedData[0].length - 1];
-//     let updatedDates = updateDates();
