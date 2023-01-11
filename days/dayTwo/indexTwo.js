@@ -27,16 +27,18 @@ function timeline() {
             document.getElementById("startButton").style.display = "none";
             studySessionData.doneDay2 = "stratDayTwo";
             platform.saveSession(studySessionData);
-            msCount();
+            // msCount();
             let startIntervalTest = async function () {
                 let startTrainning = await startInterval2Tests2();
                 button = randDevButton();
                 if (startTrainning == "done3") {
                     document.getElementById(button).style.display = "inline";
-                    document.getElementById("iframe-element").style.top = "1%"
-                    document.getElementById("iframe-element").src = "../../timer/timer.html";
-                    document.getElementById('iframe-element').classList.remove('hidden');
-                    document.getElementById("iframe-element").style.display = "inline";
+                    setTimeout(() => {
+                        document.getElementById("iframe-element").style.top = "1%"
+                        document.getElementById("iframe-element").src = "../../timer/timer.html";
+                        document.getElementById('iframe-element').classList.remove('hidden');
+                        document.getElementById("iframe-element").style.display = "inline";
+                    }, 3000)
                     setTimeout(() => {
                         document.getElementById(button).style.display = "none";
                         document.getElementById("iframe-element").style.display = "none";
@@ -55,7 +57,7 @@ function timeline() {
                                     document.getElementById("blueWins").innerHTML = '';
                                     // document.getElementById("seeYouTomorrow").innerHTML = '';
                                     // document.getElementById("endOfGame").style.display = "inline";
-                                }, 5000);
+                                }, 7000);
                                 document.getElementById("endOfGame").style.display = "inline";
 
                             }
