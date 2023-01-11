@@ -31,7 +31,7 @@ let startGame = null;
 let countTimeout1 = 0;
 async function startInterval2Tests() {
     let randCount = randCountAirplane();
-    let milliseconds = getMilliseconds();
+    let milliseconds = new Date().getTime();
     return new Promise(resolve => {
         function startIntervalThierdDay() {
             sessionInterval2Test = setInterval(
