@@ -104,6 +104,6 @@ async function demo() {
             // }
             // }
             // afterOnload();
-        }, 5000)
+        }, 4000)
     });
 }
