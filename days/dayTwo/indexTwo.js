@@ -54,7 +54,7 @@ function timeline() {
                                     document.getElementById("redWins").innerHTML = '';
                                     document.getElementById("blueWins").innerHTML = '';
                                     // document.getElementById("seeYouTomorrow").innerHTML = '';
-                                    document.getElementById("endOfGame").style.display = "inline";
+                                    // document.getElementById("endOfGame").style.display = "inline";
                                 }, 5000);
                                 document.getElementById("endOfGame").style.display = "inline";
 
