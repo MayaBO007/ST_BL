@@ -8,10 +8,11 @@ async function start2tests() {
         document.getElementById("blueButton").style.display = "inline";
         document.getElementById("gameScreen").style.display = "inline";
         document.getElementById("startButton").onclick = function () {
+            getMillisec();
             document.getElementById("startButton").style.display = "none";
             studySessionData.doneDay1 = "startDayOne";
             platform.saveSession(studySessionData);
-            msCount();
+            // msCount();
             let startIntervalTest = async function () {
                 let startSwitch = await startInterval2Tests();
                 if (startSwitch == "done1") {
