@@ -103,6 +103,8 @@ async function startIntervalSwitch() {
             // document.getElementById("redButton").style.display = "none";
             clearInterval(sessionIntervalSwitch);
             clearTimeout(sessionTimerSwitch);
+            reset_blueCar();
+            reset_redCar();
             platform.saveSession(responsesSwitch, false);
             reset_airplane();
             timeoutCountSwitch++
