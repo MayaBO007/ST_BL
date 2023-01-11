@@ -1,4 +1,4 @@
-const intervalDone = [];
+// const intervalDone = [];
 let timeTwoTests = null;
 
 async function start2tests() {
@@ -16,7 +16,7 @@ async function start2tests() {
             let startIntervalTest = async function () {
                 let startSwitch = await startInterval2Tests();
                 if (startSwitch == "done1") {
-                    intervalDone.push("done1");
+                    // intervalDone.push("done1");
                     setTimeout(() => {
                         reset_blueCar();
                         reset_redCar();
@@ -79,8 +79,9 @@ async function start2tests() {
                                                     if (endYellowTest == "done4") {
                                                         reset_blueCar();
                                                         reset_redCar();
-                                                        document.getElementById("blueButton").style.display = "none";
-                                                        document.getElementById("redButton").style.display = "none";
+                                                        reset_yellowCar();
+                                                        // document.getElementById("blueButton").style.display = "none";
+                                                        // document.getElementById("redButton").style.display = "none";
                                                         setTimeout(() => {
                                                             document.getElementById("endYellowTestButton").style.display = "inline";
                                                             document.getElementById("iframe-element2").style.top = "5%"
@@ -91,9 +92,9 @@ async function start2tests() {
                                                             document.getElementById("endYellowTestButton").style.display = "none";
                                                             document.getElementById("iframe-element2").style.display = "none";
                                                             document.getElementById("iframe-element2").src = "";
-                                                            document.getElementById("redButton").style.display = "inline";
-                                                            document.getElementById("blueButton").style.display = "inline";
-                                                            intervalDone.push("done5");
+                                                            // document.getElementById("redButton").style.display = "inline";
+                                                            // document.getElementById("blueButton").style.display = "inline";
+                                                            // intervalDone.push("done5");
                                                             let endYellow = async function () {
                                                                 let doneTwoTests = await startInterval2Tests3();
                                                                 if (doneTwoTests == "done5") {
