@@ -115,7 +115,7 @@ async function startIntervalYellow() {
                         }, 900);
                     }
                 };
-                console.log("Still running?"); //for testing purpose.
+                // console.log("Still running?"); //for testing purpose.
             }, 1000);// (Maximal carSpeed)*1000
 
         let sessionTimerYellow = setTimeout(function timeCount() {
