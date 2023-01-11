@@ -44,7 +44,7 @@ function timeline() {
                             let doneDayTwo = await startDevTest(); // add promise and resolve
                             if (doneDayTwo == "doneDayTwo") {
                                 studySessionData.doneDay2 = "doneDayTwo";
-                                studySessionData.expDaysDate = updatedDates.fullDate;
+                                // studySessionData.expDaysDate = updatedDates.fullDate;
                                 platform.saveSession(studySessionData, true)
                                 // check what's going on here
                                 showWinnings()
@@ -53,7 +53,7 @@ function timeline() {
                                     document.getElementById("todayWins").innerHTML = '';
                                     document.getElementById("redWins").innerHTML = '';
                                     document.getElementById("blueWins").innerHTML = '';
-                                    document.getElementById("seeYouTomorrow").innerHTML = '';
+                                    // document.getElementById("seeYouTomorrow").innerHTML = '';
                                     document.getElementById("endOfGame").style.display = "inline";
                                 }, 5000);
                                 document.getElementById("endOfGame").style.display = "inline";
