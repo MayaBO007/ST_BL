@@ -170,12 +170,12 @@ const seeYouTomorrowHeb = "(:!נתראה מחר";
 
 
 function showWinnings() {
-    let redWinsLength = correctRedPress.length + correctRedPressYellow.length + correctRedPressSwitch.length; //+ correctRedPressDevtest.length
-    let blueWinsLength = correctBluePress.length + correctBluePressSwitch.length + correctBluePressYellow.length; //+ correctBluePressDevtest.length
+    let redWinsLength = correctFirstRedPress.length + correctFirstRedPressYellow.length + correctFirstRedPressSwitch.length; //+ correctRedPressDevtest.length
+    let blueWinsLength = correctFirstBluePress.length + correctFirstBluePressSwitch.length + correctFirstBluePressYellow.length; //+ correctBluePressDevtest.length
     if (devButton[0] == 0) {
-        redWinsLength = redWinsLength + correctRedPressDevtest.length;
+        redWinsLength = redWinsLength + correctFirstRedPressDevtest.length;
     } else {
-        blueWinsLength = blueWinsLength + correctBluePressDevtest.length;
+        blueWinsLength = blueWinsLength + correctFirstBluePressDevtest.length;
     }
     if (studySessionData.doneDay2 == "doneDayTwo") {
         document.getElementById("blueButton").style.display = "none";

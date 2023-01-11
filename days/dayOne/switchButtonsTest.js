@@ -2,6 +2,8 @@
 const responsesSwitch = {
     correctRedPressSwitch: correctRedPressSwitch,
     correctBluePressSwitch: correctBluePressSwitch,
+    correctFirstRedPressSwitch: correctFirstRedPressSwitch,
+    correctFirstBluePressSwitch: correctFirstBluePressSwitch,
     incorrectRedPressSwitch: incorrectRedPressSwitch,
     incorrectBluePressSwitch: incorrectBluePressSwitch,
     redChoiceSwitch: redChoiceSwitch,
@@ -51,8 +53,8 @@ async function startIntervalSwitch() {
                         document.getElementById("redButton").onclick = function () {
                             buttonChoice = buttonChoice + 1;
                             if (buttonChoice == 1) {
-                                correctRedPressSwitch.push(new Date().getTime() - milliseconds);
-                                allCorrectFirstPressSwitch.push(new Date().getTime() - milliseconds);
+                                correctFirstRedPressSwitch.push(new Date().getTime() - milliseconds);
+                                // allCorrectFirstPressSwitch.push(new Date().getTime() - milliseconds);
                             } else {
                                 correctRedPressSwitch.push(new Date().getTime() - milliseconds);
                             }
@@ -80,8 +82,8 @@ async function startIntervalSwitch() {
                         document.getElementById("blueButton").onclick = function () {
                             buttonChoice = buttonChoice + 1;
                             if (buttonChoice == 1) {
-                                correctBluePressSwitch.push(new Date().getTime() - milliseconds);
-                                allCorrectFirstPressSwitch.push(new Date().getTime() - milliseconds);
+                                correctFirstBluePressSwitch.push(new Date().getTime() - milliseconds);
+                                // allCorrectFirstPressSwitch.push(new Date().getTime() - milliseconds);
                             } else {
                                 correctBluePressSwitch.push(new Date().getTime() - milliseconds);
                             }

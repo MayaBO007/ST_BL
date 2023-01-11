@@ -2,6 +2,8 @@
 const responsesYellow = {
     correctRedPressYellow: correctRedPressYellow,
     correctBluePressYellow: correctBluePressYellow,
+    correctFirstRedPressYellow: correctFirstRedPressYellow,
+    correctFirstBluePressYellow: correctFirstBluePressYellow,
     incorrectRedPressYellow: incorrectRedPressYellow,
     incorrectBluePressYellow: incorrectBluePressYellow,
     redChoiceYellow: redChoiceYellow,
@@ -63,8 +65,8 @@ async function startIntervalYellow() {
                         document.getElementById("redButton").onclick = function () {
                             buttonChoice = buttonChoice + 1;
                             if (buttonChoice == 1) {
-                                correctRedPressYellow.push(new Date().getTime() - milliseconds);
-                                allCorrectFirstPressYellow.push(new Date().getTime() - milliseconds);
+                                correctFirstRedPressYellow.push(new Date().getTime() - milliseconds);
+                                // allCorrectFirstPressYellow.push(new Date().getTime() - milliseconds);
                             } else {
                                 correctRedPressYellow.push(new Date().getTime() - milliseconds);
                             }
@@ -92,8 +94,8 @@ async function startIntervalYellow() {
                         document.getElementById("blueButton").onclick = function () {
                             buttonChoice = buttonChoice + 1;
                             if (buttonChoice == 1) {
-                                correctBluePressYellow.push(new Date().getTime() - milliseconds);
-                                allCorrectFirstPressYellow.push(new Date().getTime() - milliseconds);
+                                correctFirstBluePressYellow.push(new Date().getTime() - milliseconds);
+                                // allCorrectFirstPressYellow.push(new Date().getTime() - milliseconds);
                             } else {
                                 correctBluePressYellow.push(new Date().getTime() - milliseconds);
                             }
