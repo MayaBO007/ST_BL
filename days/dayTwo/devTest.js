@@ -23,10 +23,10 @@ platform.saveSession(responsesDev, true);
 let startClickDev = null;
 
 document.getElementById("redButton").addEventListener("click", function () {
-    allRedPressesDev.push(now);
+    allRedPressesDev.push(new Date().getTime() - milliseconds);
 });
 document.getElementById("blueButton").addEventListener("click", function () {
-    allBluePressesDev.push(now);
+    allBluePressesDev.push(new Date().getTime() - milliseconds);
 });
 
 
@@ -66,16 +66,16 @@ async function startDevTest() {
                             document.getElementById("redButton").onclick = function () {
                                 buttonChoice = buttonChoice + 1;
                                 if (buttonChoice == 1) {
-                                    correctRedPressDevtest.push(now);
-                                    allCorrectFirstPressDev.push(now);
+                                    correctRedPressDevtest.push(new Date().getTime() - milliseconds);
+                                    allCorrectFirstPressDev.push(new Date().getTime() - milliseconds);
                                 } else {
-                                    correctRedPressDevtest.push(now);
+                                    correctRedPressDevtest.push(new Date().getTime() - milliseconds);
                                 }
                             };
                             document.getElementById("blueButton").onclick = function () {
                                 buttonChoice = buttonChoice - 1;
                                 if (buttonChoice <= -1) {
-                                    incorrectBluePressDevtest.push(now);
+                                    incorrectBluePressDevtest.push(new Date().getTime() - milliseconds);
                                 }
                             };
 
@@ -89,16 +89,16 @@ async function startDevTest() {
                             document.getElementById("redButton").onclick = function () {
                                 buttonChoice = buttonChoice - 1;
                                 if (buttonChoice <= -1) {
-                                    incorrectRedPressDevtest.push(now);
+                                    incorrectRedPressDevtest.push(new Date().getTime() - milliseconds);
                                 };
                             };
                             document.getElementById("blueButton").onclick = function () {
                                 buttonChoice = buttonChoice + 1;
                                 if (buttonChoice == 1) {
-                                    correctBluePressDevtest.push(now);
-                                    allCorrectFirstPressDev.push(now);
+                                    correctBluePressDevtest.push(new Date().getTime() - milliseconds);
+                                    allCorrectFirstPressDev.push(new Date().getTime() - milliseconds);
                                 } else {
-                                    correctBluePressDevtest.push(now);
+                                    correctBluePressDevtest.push(new Date().getTime() - milliseconds);
                                 }
 
                             };

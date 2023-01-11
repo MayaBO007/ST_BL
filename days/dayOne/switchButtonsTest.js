@@ -19,10 +19,10 @@ saveResponsesSwitch = {};
 timeoutCountSwitch = 0;
 
 document.getElementById("redButton").addEventListener("click", function () {
-    allRedPressesSwitch.push(now);
+    allRedPressesSwitch.push(new Date().getTime() - milliseconds);
 });
 document.getElementById("blueButton").addEventListener("click", function () {
-    allBluePressesSwitch.push(now);
+    allBluePressesSwitch.push(new Date().getTime() - milliseconds);
 });
 //let sessionIntervalSwitch = null;
 let countSwitch = 0;
@@ -51,16 +51,16 @@ async function startIntervalSwitch() {
                         document.getElementById("redButton").onclick = function () {
                             buttonChoice = buttonChoice + 1;
                             if (buttonChoice == 1) {
-                                correctRedPressSwitch.push(now);
-                                allCorrectFirstPressSwitch.push(now);
+                                correctRedPressSwitch.push(new Date().getTime() - milliseconds);
+                                allCorrectFirstPressSwitch.push(new Date().getTime() - milliseconds);
                             } else {
-                                correctRedPressSwitch.push(now);
+                                correctRedPressSwitch.push(new Date().getTime() - milliseconds);
                             }
                         };
                         document.getElementById("blueButton").onclick = function () {
                             buttonChoice = buttonChoice - 1;
                             if (buttonChoice <= -1) {
-                                incorrectBluePressSwitch.push(now);
+                                incorrectBluePressSwitch.push(new Date().getTime() - milliseconds);
                             }
                         };
 
@@ -74,16 +74,16 @@ async function startIntervalSwitch() {
                         document.getElementById("redButton").onclick = function () {
                             buttonChoice = buttonChoice - 1;
                             if (buttonChoice <= -1) {
-                                incorrectRedPressSwitch.push(now);
+                                incorrectRedPressSwitch.push(new Date().getTime() - milliseconds);
                             };
                         };
                         document.getElementById("blueButton").onclick = function () {
                             buttonChoice = buttonChoice + 1;
                             if (buttonChoice == 1) {
-                                correctBluePressSwitch.push(now);
-                                allCorrectFirstPressSwitch.push(now);
+                                correctBluePressSwitch.push(new Date().getTime() - milliseconds);
+                                allCorrectFirstPressSwitch.push(new Date().getTime() - milliseconds);
                             } else {
-                                correctBluePressSwitch.push(now);
+                                correctBluePressSwitch.push(new Date().getTime() - milliseconds);
                             }
 
                         };
