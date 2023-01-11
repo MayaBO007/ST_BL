@@ -31,6 +31,7 @@ let startGame = null;
 let countTimeout1 = 0;
 async function startInterval2Tests() {
     let randCount = randCountAirplane();
+    let milliseconds = getMilliseconds();
     return new Promise(resolve => {
         function startIntervalThierdDay() {
             sessionInterval2Test = setInterval(
@@ -61,8 +62,8 @@ async function startInterval2Tests() {
                             document.getElementById("redButton").onclick = function () {
                                 buttonChoice = buttonChoice + 1;
                                 if (buttonChoice == 1) {
-                                    correctRedPress.push(now);
-                                    allCorrectFirstPress.push(now);
+                                    correctRedPress.push(getMilliseconds() - milliseconds);
+                                    allCorrectFirstPress.push(getMilliseconds() - milliseconds);
                                 } else {
                                     correctRedPress.push(now);
                                 }
