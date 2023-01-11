@@ -19,6 +19,13 @@ function msCount() {
     }, 50);
 };
 
+
+let milliseconds = null
+function getMillisec() {
+    milliseconds = new Date().getTime();
+    return milliseconds;
+}
+
 async function getIndexSessionData(data) {
     let i = data.length - 1;
     while (i >= 0) {
