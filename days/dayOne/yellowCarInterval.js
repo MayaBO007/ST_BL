@@ -124,6 +124,8 @@ async function startIntervalYellow() {
             clearTimeout(sessionTimerYellow);
             reset_airplane();
             reset_yellowCar();
+            reset_redCar();
+            reset_blueCar();
             timeoutCount++
             if (timeoutCount == 1) {
                 getCarNum().then((carNum) => {
