@@ -1,6 +1,8 @@
 const responsesTrainingDataThree = {
     correctRedPress: correctRedPress,
     correctBluePress: correctBluePress,
+    correctFirstRedPress: correctFirstRedPress,
+    correctFirstBluePress: correctFirstBluePress,
     incorrectRedPress: incorrectRedPress,
     incorrectBluePress: incorrectBluePress,
     redChoice: redChoice,
@@ -61,7 +63,7 @@ async function startInterval2Tests() {
                             document.getElementById("redButton").onclick = function () {
                                 buttonChoice = buttonChoice + 1;
                                 if (buttonChoice == 1) {
-                                    correctRedPress.push(new Date().getTime() - milliseconds);
+                                    correctFirstRedPress.push(new Date().getTime() - milliseconds);
                                     allCorrectFirstPress.push(new Date().getTime() - milliseconds);
                                 } else {
                                     correctRedPress.push(new Date().getTime() - milliseconds);
@@ -90,7 +92,7 @@ async function startInterval2Tests() {
                             document.getElementById("blueButton").onclick = function () {
                                 buttonChoice = buttonChoice + 1;
                                 if (buttonChoice == 1) {
-                                    correctBluePress.push(new Date().getTime() - milliseconds);
+                                    correctFirstBluePress.push(new Date().getTime() - milliseconds);
                                     allCorrectFirstPress.push(new Date().getTime() - milliseconds);
                                 } else {
                                     correctBluePress.push(new Date().getTime() - milliseconds);

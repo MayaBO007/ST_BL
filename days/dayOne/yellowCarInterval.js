@@ -6,6 +6,7 @@ const responsesYellow = {
     incorrectBluePressYellow: incorrectBluePressYellow,
     redChoiceYellow: redChoiceYellow,
     blueChoiceYellow: blueChoiceYellow,
+    yellowChoiceYellow: yellowChoiceYellow,
     allRedPressesYellow: allRedPressesYellow,
     allBluePressesYellow: allBluePressesYellow,
     allCorrectFirstPressYellow: allCorrectFirstPressYellow,

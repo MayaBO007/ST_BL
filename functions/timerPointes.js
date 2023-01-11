@@ -234,6 +234,8 @@ function timeToFiveSameDay() {
 
 // ***** consts: **** 
 
+const correctFirstRedPress = [];
+const correctFirstBluePress = [];
 const correctRedPress = [];
 const correctBluePress = [];
 const incorrectRedPress = [];
@@ -245,6 +247,8 @@ const allBluePresses = [];
 const allCorrectFirstPress = [];
 const allChoices = [];
 
+const correctFirstRedPressSwitch = [];
+const correctFirstBluePressSwitch = [];
 const correctRedPressSwitch = [];
 const correctBluePressSwitch = [];
 const incorrectRedPressSwitch = [];
@@ -256,6 +260,8 @@ const allBluePressesSwitch = [];
 const allCorrectFirstPressSwitch = [];
 const allChoicesSwitch = [];
 
+const correctFirstRedPressYellow = [];
+const correctFirstBluePressYellow = [];
 const correctRedPressYellow = [];
 const correctBluePressYellow = [];
 const incorrectRedPressYellow = [];
@@ -269,6 +275,8 @@ const allCorrectFirstPressYellow = [];
 const allChoicesYellow = [];
 const howManyYellows = [];
 
+const correctFirstRedPressDevtest = [];
+const correctFirstBluePressDevtest = [];
 const correctRedPressDevtest = [];
 const correctBluePressDevtest = [];
 const incorrectRedPressDevtest = [];
