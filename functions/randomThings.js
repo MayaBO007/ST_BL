@@ -5,11 +5,11 @@ function randColor() { // 1 or 0 - random choice of car color
     const colorArry = [0, 1];
     let car = colorArry[Math.floor(Math.random() * colorArry.length)]
     if (car == 0) {
-        blueChoice.push(now);
-        allChoices.push(now);
+        blueChoice.push(new Date().getTime() - milliseconds);
+        allChoices.push(new Date().getTime() - milliseconds);
     } else {
-        redChoice.push(now);
-        allChoices.push(now);
+        redChoice.push(new Date().getTime() - milliseconds);
+        allChoices.push(new Date().getTime() - milliseconds);
     }
     return car
 };
@@ -18,13 +18,13 @@ function randColorYellow() { // 2 or 1 or 0
     const colorArry = [0, 1, 2];
     let car = colorArry[Math.floor(Math.random() * colorArry.length)];
     if (car == 0) {
-        redChoiceYellow.push(now);
+        redChoiceYellow.push(new Date().getTime() - milliseconds);
     } else if (car == 1) {
-        blueChoiceYellow.push(now)
+        blueChoiceYellow.push(new Date().getTime() - milliseconds)
     } else {
-        yellowChoiceYellow.push(now)
+        yellowChoiceYellow.push(new Date().getTime() - milliseconds)
     }
-    allChoicesYellow.push(now);
+    allChoicesYellow.push(new Date().getTime() - milliseconds);
     return car
 };
 
@@ -33,11 +33,11 @@ function randColorSwitch() {
     const colorArry = [0, 1];
     let car = colorArry[Math.floor(Math.random() * colorArry.length)]
     if (car == 0) {
-        blueChoiceSwitch.push(now);
+        blueChoiceSwitch.push(new Date().getTime() - milliseconds);
     } else {
-        redChoiceSwitch.push(now)
+        redChoiceSwitch.push(new Date().getTime() - milliseconds)
     }
-    allChoicesSwitch.push(now);
+    allChoicesSwitch.push(new Date().getTime() - milliseconds);
     return car
 };
 
@@ -46,11 +46,11 @@ function randColorDev() {
     const colorArry = [0, 1];
     let car = colorArry[Math.floor(Math.random() * colorArry.length)]
     if (car == 0) {
-        blueChoiceDev.push(now);
+        blueChoiceDev.push(new Date().getTime() - milliseconds);
     } else {
-        redChoiceDev.push(now)
+        redChoiceDev.push(new Date().getTime() - milliseconds)
     }
-    allChoicesDev.push(now);
+    allChoicesDev.push(new Date().getTime() - milliseconds);
     return car
 };
 
