@@ -62,8 +62,8 @@ async function startInterval2Tests() {
                             document.getElementById("redButton").onclick = function () {
                                 buttonChoice = buttonChoice + 1;
                                 if (buttonChoice == 1) {
-                                    correctRedPress.push(getMilliseconds() - milliseconds);
-                                    allCorrectFirstPress.push(getMilliseconds() - milliseconds);
+                                    correctRedPress.push(new Date().getTime() - milliseconds);
+                                    allCorrectFirstPress.push(new Date().getTime() - milliseconds);
                                 } else {
                                     correctRedPress.push(now);
                                 }
