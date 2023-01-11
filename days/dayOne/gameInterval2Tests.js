@@ -331,7 +331,7 @@ async function startInterval2Tests3() {
                 clearTimeout(sessionTimer2test3);
                 reset_airplane();
             }
-        }, (900000 - new Date().getTime() - milliseconds));
+        }, (900000 - (new Date().getTime() - milliseconds)));
         // }, 3000);
     });
 };
