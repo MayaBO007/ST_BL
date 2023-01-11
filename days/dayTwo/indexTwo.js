@@ -50,15 +50,13 @@ function timeline() {
                                 platform.saveSession(studySessionData, true)
                                 // check what's going on here
                                 showWinnings()
+                                // document.getElementById("endOfDayMessage").style.display = "none";
+                                // document.getElementById("todayWins").innerHTML = '';
+                                // document.getElementById("redWins").innerHTML = '';
+                                // document.getElementById("blueWins").innerHTML = '';
                                 setTimeout(() => {
-                                    document.getElementById("endOfDayMessage").style.display = "none";
-                                    document.getElementById("todayWins").innerHTML = '';
-                                    document.getElementById("redWins").innerHTML = '';
-                                    document.getElementById("blueWins").innerHTML = '';
-                                    // document.getElementById("seeYouTomorrow").innerHTML = '';
-                                    // document.getElementById("endOfGame").style.display = "inline";
+                                    document.getElementById("endOfGame").style.display = "inline";
                                 }, 7000);
-                                document.getElementById("endOfGame").style.display = "inline";
 
                             }
                         }
