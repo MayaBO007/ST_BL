@@ -105,7 +105,7 @@ async function startInterval2Tests() {
                             }, carSpeed * 1000);
                         };
 
-                        if (countingCars >= 205) {
+                        if (countingCars >= 210) {
                             reset_redCar();
                             reset_blueCar();
                             reset_airplane();

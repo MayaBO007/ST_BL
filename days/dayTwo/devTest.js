@@ -108,7 +108,7 @@ async function startDevTest() {
                             }, carSpeed * 1000);
                         }
 
-                        if (countingCars >= 252 & breaks <= 2) {
+                        if (countingCars >= 280 & breaks <= 2) {
                             clearInterval(sessionIntervalTest);
                             reset_redCar();
                             reset_blueCar();

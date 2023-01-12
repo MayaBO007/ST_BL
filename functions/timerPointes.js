@@ -195,7 +195,7 @@ function showWinnings() {
     }
 };
 
-let breaks = [];
+let breaks = null;
 
 function timeToFive() {
     let updatedDates = updateDates();
