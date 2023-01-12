@@ -145,7 +145,7 @@
 	z-index: 999;
 	position: absolute;
 	animation-name: circle;
-	animation-duration: 1.5s;
+	animation-duration: 0.7s;
 	animation-iteration-count: infinite;
 }
 
