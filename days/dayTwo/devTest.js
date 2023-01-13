@@ -3,6 +3,8 @@
 const responsesDev = {
     correctRedPressDevtest: correctRedPressDevtest,
     correctBluePressDevtest: correctBluePressDevtest,
+    correctFirstRedPressDevtest: correctFirstRedPressDevtest,
+    correctFirstBluePressDevtest: correctFirstBluePressDevtest,
     incorrectRedPressDevtest: incorrectRedPressDevtest,
     incorrectBluePressDevtest: incorrectBluePressDevtest,
     redChoiceDev: redChoiceDev,
@@ -66,8 +68,8 @@ async function startDevTest() {
                             document.getElementById("redButton").onclick = function () {
                                 buttonChoice = buttonChoice + 1;
                                 if (buttonChoice == 1) {
-                                    correctRedPressDevtest.push(new Date().getTime() - milliseconds);
-                                    allCorrectFirstPressDev.push(new Date().getTime() - milliseconds);
+                                    correctFirstRedPressDevtest.push(new Date().getTime() - milliseconds);
+//                                     allCorrectFirstPressDev.push(new Date().getTime() - milliseconds);
                                 } else {
                                     correctRedPressDevtest.push(new Date().getTime() - milliseconds);
                                 }
@@ -95,8 +97,8 @@ async function startDevTest() {
                             document.getElementById("blueButton").onclick = function () {
                                 buttonChoice = buttonChoice + 1;
                                 if (buttonChoice == 1) {
-                                    correctBluePressDevtest.push(new Date().getTime() - milliseconds);
-                                    allCorrectFirstPressDev.push(new Date().getTime() - milliseconds);
+                                    correctFirstBluePressDevtest.push(new Date().getTime() - milliseconds);
+//                                     allCorrectFirstPressDev.push(new Date().getTime() - milliseconds);
                                 } else {
                                     correctBluePressDevtest.push(new Date().getTime() - milliseconds);
                                 }
