@@ -781,6 +781,19 @@
 
 }
 
+#fiveAM_hor {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: none;
+    background-color: transparent;
+    display: none;
+
+}
+
 #endDayMsg {
     position: absolute;
     left: 0%;
