@@ -4,6 +4,11 @@
 // ----------------------------------------------------------------------------------------
 // initialize variables:
 var screenOrientationEvents = [];
+if (window.matchMedia("(orientation: landscape)").matches) {
+    removeOnlyLandscapeMessage()
+} else {
+    showOnlyLandscapeMessage()
+}
 
 window.addEventListener("orientationchange", function (event) {
     // if ortation is changed from the main landscape mode
