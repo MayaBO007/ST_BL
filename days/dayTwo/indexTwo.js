@@ -29,6 +29,11 @@ function timeline() {
                             document.getElementById("blueButton").style.display = "inline";
                             document.getElementById("gameScreen").style.display = "inline";
                             document.getElementById("startButton").onclick = function () {
+                                let my_awesome_script = document.createElement('script');
+                                my_awesome_script.setAttribute('src', '../../functions/orientation.js');
+                                // my_awesome_script.src = "../functions/orientation.js";
+                                document.body.appendChild(my_awesome_script);
+
                                 document.getElementById("startButton").style.display = "none";
                                 studySessionData.doneDay2 = "stratDayTwo";
                                 platform.saveSession(studySessionData);
