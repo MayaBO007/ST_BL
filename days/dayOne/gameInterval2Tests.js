@@ -232,8 +232,8 @@ async function startInterval2Tests2() {
             clearTimeout(sessionTimer2test2);
             platform.saveSession(responsesTrainingDataThree, false);
             reset_airplane();
-            reset_redCar();
-            reset_blueCar();
+            // reset_redCar();
+            // reset_blueCar();
             countTimeout2++;
             if (countTimeout2 >= 1) {
                 resolve("done3");

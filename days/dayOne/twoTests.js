@@ -37,8 +37,8 @@ async function start2tests() {
                             let endSwitch = await startIntervalSwitch();
                             if (endSwitch == "done2") {
                                 setTimeout(() => {
-                                    reset_blueCar();
-                                    reset_redCar();
+                                    // reset_blueCar();
+                                    // reset_redCar();
                                     document.getElementById("startAfterSwitchTestButton").style.display = "inline";
                                     document.getElementById("iframe-element2").style.top = "1%"
                                     document.getElementById("iframe-element2").src = "../../timer/timer2.html";
