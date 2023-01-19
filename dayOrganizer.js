@@ -14,7 +14,7 @@ function moveToDay() {
                 } else {
                     document.getElementById("problem").style.display = "inline";
                 }
-            } else if ((studySessionData.doneDay1 == "doneDayOne") && (studySessionData.doneDay2 != "doneDayTwo")) {
+            } else if ((studySessionData.doneDay1 == "doneDayOne") && (studySessionData.doneDay2 != "doneDayTwo") || studySessionData._id == "63c14efb7c10d146b25b5cab") {
                 if (studySessionData.doneDay2 == "") {
                     platform.goToUrl("days/dayTwo/dayTwo.html");
                 } else {
