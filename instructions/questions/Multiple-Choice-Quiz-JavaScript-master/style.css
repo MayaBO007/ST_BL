@@ -110,12 +110,12 @@ body {
 
 
 #progress {
-    height: 20%;
+    height: 10%;
     width: 40%;
     position: absolute;
-    bottom: 0px;
+    bottom: 0%;
     right: 0px;
-    padding: 5px;
+    /* padding: 5px; */
     text-align: right;
 }
 

@@ -15,7 +15,7 @@ async function demo() {
         document.getElementById("redButton").style.display = "flex";
         document.getElementById("blueButton").style.display = "flex";
         document.getElementById("gameScreen").style.display = "inline";
-        document.getElementById("ins12").style.display = "none";
+        // document.getElementById("ins12").style.display = "none";
         setTimeout(() => {
             document.getElementById("redCar").style.display = "inline";
             document.getElementById("redCar").style.animationPlayState = "running";

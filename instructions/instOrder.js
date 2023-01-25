@@ -26,10 +26,10 @@ async function startFirstDay() {
                             document.getElementById("qPage").style.display = "inline";
                             document.getElementById("qStart").style.display = "inline";
                             document.getElementById("qStart").onclick = function () {
-                                platform.goToUrl("instructions/questions/Multiple-Choice-Quiz-JavaScript-master/index.html");
                                 document.getElementById("qPage").style.display = "none";
                                 document.getElementById("qStart").style.display = "none";
                                 resolve("doneInstructions")
+                                platform.goToUrl("instructions/questions/Multiple-Choice-Quiz-JavaScript-master/index.html");
                             }
                         }
                     }
