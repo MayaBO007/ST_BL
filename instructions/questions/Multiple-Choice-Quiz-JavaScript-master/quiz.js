@@ -166,7 +166,12 @@ function scoreRender() {
     // choose the image based on the scorePerCent
     scoreButton = null;
     if (scorePerCent > 99) {
-        window.close();
+        document.getElementById("ins12").style.display = "inline";
+        document.getElementById("ins12").addEventListener("click", function () {
+            setTimeout(() => {
+                platform.goToUrl("days/dayOne/dayOne.html");
+            }, 200)
+        });
     } else {
         document.getElementById("scoreContainer").onclick = function () {
             scoreButton = 1;
